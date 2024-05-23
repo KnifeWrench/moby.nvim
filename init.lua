@@ -4,9 +4,6 @@
 -- Primarily just download and execute lazy.nvim
 --]]
 
-
--- vim.g.mapleader = ","
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -21,6 +18,9 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   }
 end
+
+-- Clipboard fix
+vim.o.clipboard = 'unnamedplus'
 
 -- Add lazy to the `runtimepath`, this allows us to `require` it.
 vim.opt.rtp:prepend(lazypath)
