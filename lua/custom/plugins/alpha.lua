@@ -37,15 +37,6 @@ return {
         },
     },
 
-    -- Nvimtree (File Explorer)
-    {
-        'nvim-tree/nvim-tree.lua',
-        lazy = true,
-        dependencies = {
-            'nvim-tree/nvim-web-devicons',
-        },
-    },
-
     -- Telescope (Fuzzy Finder)
     {
         'nvim-telescope/telescope.nvim',

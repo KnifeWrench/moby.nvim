@@ -3,6 +3,7 @@
 -- 
 -- Primarily just download and execute lazy.nvim
 --]]
+CONFIG_START_TIME = vim.loop.hrtime()
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -31,3 +32,5 @@ require("lazy").setup({ import = "custom.plugins" }, {
     notify = false,
   },
 })
+
+CONFIG_START_TIME = vim.loop.hrtime()
