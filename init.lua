@@ -20,6 +20,17 @@ if not vim.loop.fs_stat(lazypath) then
   }
 end
 
+-- Row numbers
+vim.opt.number = true
+-- vim.opt.relativenumber = true
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--     pattern = "*",
+--     callback = function()
+--         vim.opt_local.number = true
+--     end,
+-- })
+
 -- Clipboard fix
 vim.o.clipboard = 'unnamedplus'
 
