@@ -44,4 +44,4 @@ require("lazy").setup({ import = "custom.plugins" }, {
   },
 })
 
-CONFIG_START_TIME = vim.loop.hrtime()
+CONFIG_END_TIME = vim.loop.hrtime()
