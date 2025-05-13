@@ -33,18 +33,3 @@ builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
     previewer = false,
 })
 end, { desc = '[/] Fuzzily search in current buffer' })
-
--- File Browser
-local telescope = require("telescope")
-local builtin = require("telescope.builtin")
-
--- Load the file-browser extension
-telescope.load_extension("file_browser")
-
--- Keymap to open the file browser
-vim.keymap.set('n', '<leader>fb', function()
-    telescope.extensions.file_browser.file_browser({
-        path = "%:p:h", -- Open in the folder of the current buffer
-        cwd_to_path = true, -- Launch folder_browser from path
-    })
-end, { desc = '[F]ile [B]rowser' })
